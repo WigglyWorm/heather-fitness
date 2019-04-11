@@ -7624,13 +7624,15 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 992px) {
   #fh5co-hero .fh5co-intro .fh5co-text {
     bottom: 0;
-    bottom: -4em;
+    /* bottom: -4em; */
+    bottom: -22em;
   }
 }
 @media screen and (max-width: 768px) {
   #fh5co-hero .fh5co-intro .fh5co-text {
     bottom: 0;
-    bottom: -4em;
+    /* bottom: -4em; */
+    bottom: -20em;
   }
 }
 #fh5co-hero .fh5co-intro h2 {
@@ -7679,6 +7681,13 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 10;
   position: relative;
 }
+
+@media screen and (max-width: 350px) {
+  .navbar-brand {
+    line-height: 18px;
+    font-size: 12px;
+  }
+}
 .navbar-brand > span {
   display: -moz-inline-stack;
   display: inline-block;
@@ -7698,6 +7707,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     padding-left: 0;
     margin-left: 0;
+    font-size: 15px; /* added style - to prevent overlapping elements */
+
   }
 }
 
