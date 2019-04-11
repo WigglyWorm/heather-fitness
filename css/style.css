@@ -7597,7 +7597,18 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     padding-top: 2em;
     padding-bottom: 2em;
-    height: inherit;
+    /* height: inherit; */
+    height: 650px;
+  }
+}
+@media screen and (max-width: 516px) {
+  #hero {
+    height: 750px;
+  }
+}
+@media screen and (max-width: 380px) {
+  #hero {
+    height: 800px;
   }
 }
 #hero .intro {
@@ -7619,18 +7630,26 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #hero .intro .text {
-  bottom: -15em;
+  /* bottom: -15em; */
+  bottom: -25em;
 }
 @media screen and (max-width: 992px) {
   #hero .intro .text {
     bottom: 0;
-    bottom: -4em;
+    /* bottom: -4em; */
+    bottom: -30em;
   }
 }
 @media screen and (max-width: 768px) {
   #hero .intro .text {
     bottom: 0;
-    bottom: -4em;
+    /* bottom: -4em; */
+    bottom: -20em;
+  }
+}
+@media screen and (max-width: 380px) {
+  #hero .intro .text {
+    bottom: -24em;
   }
 }
 #hero .intro h2 {
@@ -7639,10 +7658,26 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 50px;
   font-weight: 700;
 }
+@media screen and (max-width: 1192px) {
+  #hero .intro h2 {
+    font-size: 40px;
+  }
+}
 @media screen and (max-width: 768px) {
   #hero .intro h2 {
     font-size: 40px;
     line-height: 40px;
+  }
+}
+@media screen and (max-width: 724px) {
+  #hero .intro h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 334px) {
+  #hero .intro h2 {
+    font-size: 30px;
   }
 }
 #hero .intro p {
@@ -7698,6 +7733,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     padding-left: 0;
     margin-left: 0;
+    font-size: 15px; /* added style - to prevent overlapping elements */
+
+  }
+}
+@media screen and (max-width: 350px) {
+  .navbar-brand {
+    line-height: 18px;
+    font-size: 12px;
   }
 }
 
@@ -8880,8 +8923,57 @@ a > img.fh5co-align-center {
    text-align: center;
   }
 
-  /* MY STORY PAGE*/
+  /* MY STORY CSS UPDATES*/
   #mystory-head {
     padding: 2em 0;
   }
+
+  /* HERO TEXT CONTAINER */
+  /* #hero .intro .text-story {
+    color: #fff;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+  @media screen and (max-width: 1192px) {
+    #hero .intro .text-story {
+      font-size: 40px;
+    }
+  } */
+
+  #hero .intro .text-story {
+    bottom: -34em;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    #hero .intro .text-story {
+      bottom: -23em;
+    }
+  }
+
+  @media screen and (max-width: 516px) {
+    #hero .intro .text-story {
+      bottom: -27em;
+    }
+  }
+
+  /* HERO HEADER */
+  @media screen and (max-width: 624px) {
+    #hero .intro h2.headline-h2 {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 541px) {
+    #hero .intro h2.headline-h2 {
+      font-size: 28px;
+    }
+  }
+
+  /* @media screen and (max-width: 280px) {
+    #hero .intro h2.headline-h2 {
+      font-size: 25px;
+    }
+  } */
 
